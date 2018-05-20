@@ -1,0 +1,30 @@
+.first{
+        height: 200px;
+        width:300px;
+        background: purple
+    }
+    
+#second{
+        height: 200px;
+        width:300px;
+        background: maroon
+        }
+
+#home{
+    height: 400px;
+    width:100%;
+    background: violet
+}
+
+#about{
+        height: 400px;
+        width:100%;
+        background: pink
+}
+
+#contact{
+        height: 400px;
+        width:100%;
+        background: yellow
+
+}
