@@ -28,3 +28,10 @@
         background: yellow
 
 }
+ /*   
+h1{
+    color: red
+}*/
+table,thead,tr,td{
+    border:1px solid black
+}
