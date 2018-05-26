@@ -1,0 +1,29 @@
+h1{
+    color:violet;
+    text-align: center;
+    font-size: 50px;
+    background:paleturquoise;
+    font-family: 'Times New Roman', Times, serif
+}
+div{
+    height: 300px;
+    width:300px;
+    background:olivedrab;
+    border:5px double red;
+    float: left
+}
+
+#inner{
+    height: 100px;
+    width: 100px;
+    background: orangered;
+    margin-left: 100px;
+    margin-top:50px;
+}
+
+/*
+solid
+dotted
+double
+dashed
+*/

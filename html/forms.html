@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Forms</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="this is my form page">
+        <meta name="keywork" content="html css">
+        <meta name="viewport" content="width=device-width,initial-scale=0.1">
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Employee</legend>
+                <label for="fname">firstName: </label>
+                <input type="text"  value="firstName" id="fname" required autofocus/><br/>
+                <label for="lname">lastName:</label>
+                <input type="text"  placeholder="lstName" id="lname" minlength="4"/><br/>
+                <label for="email">Email: </label>
+                <input type="email" id="email"><br/>
+                <label for="password">password: </label>
+                <input type="password" id="password"><br/>
+                <label for="female">FeMale </label>
+                <input type="radio" name="gender" value="female" id="female">
+        
+                <label for="male">Male: </label>
+                <input type="radio" name="gender" value="male" id="male"><br/>
+
+                <label for="apple">Apple: </label>
+                <input type="checkbox"  value="apple" id="apple"><br/>
+                <label for="Mango">Mango: </label>
+                <input type="checkbox"  value="Mango" id="Mango"><br/>
+                <label for="Banana">Banana: </label>
+                <input type="checkbox"  value="Banana" id="Banana"><br/>
+                <br/>
+                <select>
+                    <option>Master</option>
+                    <option>Visa</option>
+                </select>
+
+                <label for="file">File: </label>
+                <input type="file" id="file"><br/>
+                <label for="time">Time: </label>
+                <input type="time" id="time"><br/>
+                <label for="color">color: </label>
+                <input type="color" id="color"><br/>
+                <label for="tel">Tel: </label>
+                <input type="tel" id="tel"><br/>
+                <label for="date">Date: </label>
+                <input type="date" id="date"><br/>
+                <textarea></textarea>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </fieldset>
+        </form>
+
+    </body>
+</html>
