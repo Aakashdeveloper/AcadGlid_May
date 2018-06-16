@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Click Me</title>
+        <script>
+            function calc(opt){
+                var a = document.getElementById("one").value;
+                var b = document.getElementById("two").value;
+                var out;
+                if(opt=="add"){
+                    out= parseInt(a)+parseInt(b);
+                    document.getElementById("out").innerHTML=out
+                }else{
+                    out = a-b;
+                    document.getElementById("out").innerHTML=out
+                }
+                if(isNaN(out)==true){
+                    document.getElementById("out").innerHTML="Please enter valid value"
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <input type="text"  id="one"/>
+        <input type="text"  id="two"/>
+        <input type="button" value="+++" onclick="calc('add')"/>
+        <input type="button" value="---" onclick="calc('minus')"/>
+        <h1 id="out"></h1>
+    </body>
+</html>
