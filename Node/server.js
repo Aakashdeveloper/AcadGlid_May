@@ -1,13 +1,36 @@
 var http = require('http');
 var express = require('express');
+var chalk = require('chalk');
+var ejs = require('ejs');
 var app = express();
 var port= 5600;
 
+var nav = [
+    {link:'/',title:'Home'},
+    {link:'/products',title:'Products'},
+    {link:'/admin',title:'Admin'}
+];
+
+var productsRouter = require('./src/routes/ProductsRoutes')(nav);
+
+app.use(express.static(__dirname + '/public'));
+app.set('views', './src/views')
+app.set('view engine', 'ejs')
+
+
+
+app.use('/products',productsRouter);
+
 app.get('/', function(req,res){
-    res.send("hiiiiii")
+    res.render('index',
+        {
+            nav:nav,
+            title:'Home Page'}
+        )
 })
 
-
-app.listen(5600);
+app.listen(5600,function(err){
+    console.log("server running on port "+chalk.green(port))
+});
 
 

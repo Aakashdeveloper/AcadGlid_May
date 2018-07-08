@@ -8,3 +8,6 @@ var server = http.createServer(function(req,res){
 })
 
 server.listen(9000);
+
+/*MEAN
+MERN*/
