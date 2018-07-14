@@ -1,0 +1,86 @@
+db.first.update({name:"erlang"},{name:"erlang",year:1995},{upsert:true})
+WriteResult({
+	"nMatched" : 0,
+	"nUpserted" : 1,
+	"nModified" : 0,
+	"_id" : ObjectId("5b49880beb5cf10de3189aa1")
+})
+> db.first.find().pretty()
+{ "_id" : ObjectId("5b497e297e774150d5a37486"), "name" : "javascript" }
+{
+	"_id" : ObjectId("5b497e797e774150d5a37487"),
+	"name" : "python",
+	"year" : 1991
+}
+{
+	"_id" : ObjectId("5b497e967e774150d5a37488"),
+	"name" : "node",
+	"year" : 2001,
+	"framework" : "express"
+}
+{
+	"_id" : ObjectId("5b497ebe7e774150d5a37489"),
+	"name" : "node",
+	"year" : 2001,
+	"framework" : "hapi"
+}
+{
+	"_id" : ObjectId("5b497f677e774150d5a3748a"),
+	"name" : "node",
+	"year" : 2005,
+	"framework" : "stringloop"
+}
+{
+	"_id" : ObjectId("5b49800c7e774150d5a3748b"),
+	"name" : "python",
+	"framework" : {
+		"danjgo" : 1998,
+		"flask" : 2002
+	}
+}
+{
+	"_id" : ObjectId("5b49805e7e774150d5a3748c"),
+	"name" : "python",
+	"framework" : [
+		{
+			"danjgo" : 1998,
+			"flask" : 2002
+		},
+		{
+			"web2py" : 2005,
+			"bottle" : 2007
+		}
+	]
+}
+{
+	"_id" : ObjectId("5b4981bb7e774150d5a3748d"),
+	"name" : "python",
+	"framework" : [
+		{
+			"danjgo" : 1998,
+			"flask" : 2003
+		},
+		{
+			"web2py" : 2005,
+			"bottle" : 2007
+		}
+	]
+}
+{
+	"_id" : ObjectId("5b4985437e774150d5a3748e"),
+	"name" : "golang",
+	"year" : 2008
+}
+{
+	"_id" : ObjectId("5b4985467e774150d5a3748f"),
+	"name" : "golang",
+	"year" : 2008
+}
+{
+	"_id" : ObjectId("5b49880beb5cf10de3189aa1"),
+	"name" : "erlang",
+	"year" : 1995
+}
+> db.first.update({name:"haskell"},{name:"haskell",year:1995})
+WriteResult({ "nMatched" : 0, "nUpserted" : 0, "nModified" : 0 })
+> 

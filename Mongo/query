@@ -1,0 +1,555 @@
+use carsApp
+switched to db carsApp
+> show collections
+cars
+> db.cars.find().pretty()
+{
+	"_id" : ObjectId("5b45784815a9a918f018af4a"),
+	"id" : 1,
+	"brand" : "Ford",
+	"model" : "Mustang",
+	"year" : 1985,
+	"image" : "https://image.ibb.co/fm778n/accord.jpg",
+	"description" : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit"
+}
+{
+	"_id" : ObjectId("5b45784815a9a918f018af4b"),
+	"id" : 2,
+	"brand" : "Nissan",
+	"model" : "Altima",
+	"year" : 2017,
+	"image" : "https://image.ibb.co/fm778n/accord.jpg",
+	"description" : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit"
+}
+{
+	"_id" : ObjectId("5b45784815a9a918f018af4c"),
+	"id" : 3,
+	"brand" : "Nissan",
+	"model" : "Armada",
+	"year" : 2017,
+	"image" : "https://image.ibb.co/fm778n/accord.jpg",
+	"description" : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit"
+}
+{
+	"_id" : ObjectId("5b45784815a9a918f018af4d"),
+	"id" : 4,
+	"brand" : "Nissan",
+	"model" : "Frontier",
+	"year" : 2017,
+	"image" : "https://image.ibb.co/fm778n/accord.jpg",
+	"description" : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit"
+}
+{
+	"_id" : ObjectId("5b45784815a9a918f018af4e"),
+	"id" : 5,
+	"brand" : "Nissan",
+	"model" : "Maxima",
+	"year" : 2017,
+	"image" : "https://image.ibb.co/fm778n/accord.jpg",
+	"description" : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit"
+}
+> show dbs
+admin            0.000GB
+carsApp          0.000GB
+config           0.000GB
+local            0.000GB
+news             0.000GB
+test-database-1  0.000GB
+> show dbs
+admin            0.000GB
+carsApp          0.000GB
+config           0.000GB
+local            0.000GB
+news             0.000GB
+test-database-1  0.000GB
+> use carsApp
+switched to db carsApp
+> show collections
+cars
+user
+> db.user.find().pretty()
+{
+	"_id" : ObjectId("5b481908416bf81e8708e03f"),
+	"fname" : "john",
+	"lname" : "andrew"
+}
+> show dbs
+admin            0.000GB
+carsApp          0.000GB
+config           0.000GB
+local            0.000GB
+news             0.000GB
+test-database-1  0.000GB
+> db.carsApp.find()
+> use carsApp
+switched to db carsApp
+> show collections
+cars
+user
+> db.cars.find()
+{ "_id" : ObjectId("5b45784815a9a918f018af4a"), "id" : 1, "brand" : "Ford", "model" : "Mustang", "year" : 1985, "image" : "https://image.ibb.co/fm778n/accord.jpg", "description" : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit" }
+{ "_id" : ObjectId("5b45784815a9a918f018af4b"), "id" : 2, "brand" : "Nissan", "model" : "Altima", "year" : 2017, "image" : "https://image.ibb.co/fm778n/accord.jpg", "description" : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit" }
+{ "_id" : ObjectId("5b45784815a9a918f018af4c"), "id" : 3, "brand" : "Nissan", "model" : "Armada", "year" : 2017, "image" : "https://image.ibb.co/fm778n/accord.jpg", "description" : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit" }
+{ "_id" : ObjectId("5b45784815a9a918f018af4d"), "id" : 4, "brand" : "Nissan", "model" : "Frontier", "year" : 2017, "image" : "https://image.ibb.co/fm778n/accord.jpg", "description" : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit" }
+{ "_id" : ObjectId("5b45784815a9a918f018af4e"), "id" : 5, "brand" : "Nissan", "model" : "Maxima", "year" : 2017, "image" : "https://image.ibb.co/fm778n/accord.jpg", "description" : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit" }
+> db.cars.find().pretty()
+{
+	"_id" : ObjectId("5b45784815a9a918f018af4a"),
+	"id" : 1,
+	"brand" : "Ford",
+	"model" : "Mustang",
+	"year" : 1985,
+	"image" : "https://image.ibb.co/fm778n/accord.jpg",
+	"description" : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit"
+}
+{
+	"_id" : ObjectId("5b45784815a9a918f018af4b"),
+	"id" : 2,
+	"brand" : "Nissan",
+	"model" : "Altima",
+	"year" : 2017,
+	"image" : "https://image.ibb.co/fm778n/accord.jpg",
+	"description" : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit"
+}
+{
+	"_id" : ObjectId("5b45784815a9a918f018af4c"),
+	"id" : 3,
+	"brand" : "Nissan",
+	"model" : "Armada",
+	"year" : 2017,
+	"image" : "https://image.ibb.co/fm778n/accord.jpg",
+	"description" : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit"
+}
+{
+	"_id" : ObjectId("5b45784815a9a918f018af4d"),
+	"id" : 4,
+	"brand" : "Nissan",
+	"model" : "Frontier",
+	"year" : 2017,
+	"image" : "https://image.ibb.co/fm778n/accord.jpg",
+	"description" : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit"
+}
+{
+	"_id" : ObjectId("5b45784815a9a918f018af4e"),
+	"id" : 5,
+	"brand" : "Nissan",
+	"model" : "Maxima",
+	"year" : 2017,
+	"image" : "https://image.ibb.co/fm778n/accord.jpg",
+	"description" : "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit"
+}
+> db.user.find()
+{ "_id" : ObjectId("5b481908416bf81e8708e03f"), "fname" : "john", "lname" : "andrew" }
+> db.user.find().pretty()
+{
+	"_id" : ObjectId("5b481908416bf81e8708e03f"),
+	"fname" : "john",
+	"lname" : "andrew"
+}
+> use Acadgild
+switched to db Acadgild
+> show dbs
+admin            0.000GB
+carsApp          0.000GB
+config           0.000GB
+local            0.000GB
+news             0.000GB
+test-database-1  0.000GB
+> use acadgild
+switched to db acadgild
+> db.first.insert({name:"javascript"})
+WriteResult({ "nInserted" : 1 })
+> show dbs
+acadgild         0.000GB
+admin            0.000GB
+carsApp          0.000GB
+config           0.000GB
+local            0.000GB
+news             0.000GB
+test-database-1  0.000GB
+> use acadgild
+switched to db acadgild
+> show collections
+first
+> db.first.find()
+{ "_id" : ObjectId("5b497e297e774150d5a37486"), "name" : "javascript" }
+> db.first.insert({name:"python", year:2001})
+WriteResult({ "nInserted" : 1 })
+> db.first.find()
+{ "_id" : ObjectId("5b497e297e774150d5a37486"), "name" : "javascript" }
+{ "_id" : ObjectId("5b497e797e774150d5a37487"), "name" : "python", "year" : 2001 }
+> db.first.insert({name:"node", year:2001,framework:"express"})
+WriteResult({ "nInserted" : 1 })
+> db.first.find()
+{ "_id" : ObjectId("5b497e297e774150d5a37486"), "name" : "javascript" }
+{ "_id" : ObjectId("5b497e797e774150d5a37487"), "name" : "python", "year" : 2001 }
+{ "_id" : ObjectId("5b497e967e774150d5a37488"), "name" : "node", "year" : 2001, "framework" : "express" }
+> db.first.find().pretty()
+{ "_id" : ObjectId("5b497e297e774150d5a37486"), "name" : "javascript" }
+{
+	"_id" : ObjectId("5b497e797e774150d5a37487"),
+	"name" : "python",
+	"year" : 2001
+}
+{
+	"_id" : ObjectId("5b497e967e774150d5a37488"),
+	"name" : "node",
+	"year" : 2001,
+	"framework" : "express"
+}
+> db.first.insert({name:"node", year:2001,framework:"hapi"})
+WriteResult({ "nInserted" : 1 })
+> db.first.find().pretty()
+{ "_id" : ObjectId("5b497e297e774150d5a37486"), "name" : "javascript" }
+{
+	"_id" : ObjectId("5b497e797e774150d5a37487"),
+	"name" : "python",
+	"year" : 2001
+}
+{
+	"_id" : ObjectId("5b497e967e774150d5a37488"),
+	"name" : "node",
+	"year" : 2001,
+	"framework" : "express"
+}
+{
+	"_id" : ObjectId("5b497ebe7e774150d5a37489"),
+	"name" : "node",
+	"year" : 2001,
+	"framework" : "hapi"
+}
+> db.first.find({})
+{ "_id" : ObjectId("5b497e297e774150d5a37486"), "name" : "javascript" }
+{ "_id" : ObjectId("5b497e797e774150d5a37487"), "name" : "python", "year" : 2001 }
+{ "_id" : ObjectId("5b497e967e774150d5a37488"), "name" : "node", "year" : 2001, "framework" : "express" }
+{ "_id" : ObjectId("5b497ebe7e774150d5a37489"), "name" : "node", "year" : 2001, "framework" : "hapi" }
+> db.first.find({name:'node'})
+{ "_id" : ObjectId("5b497e967e774150d5a37488"), "name" : "node", "year" : 2001, "framework" : "express" }
+{ "_id" : ObjectId("5b497ebe7e774150d5a37489"), "name" : "node", "year" : 2001, "framework" : "hapi" }
+> db.first.find({name:'node'},{_id:0})
+{ "name" : "node", "year" : 2001, "framework" : "express" }
+{ "name" : "node", "year" : 2001, "framework" : "hapi" }
+> db.first.find({name:'node'},{_id:0,name:1})
+{ "name" : "node" }
+{ "name" : "node" }
+> db.first.insert({name:"node", year:2005,framework:"stringloop"})
+WriteResult({ "nInserted" : 1 })
+> db.first.find({name:'node'},{_id:0,name:1})
+{ "name" : "node" }
+{ "name" : "node" }
+{ "name" : "node" }
+> db.first.insert({name:"python",framework:{danjgo:1998,flask:2002}})
+WriteResult({ "nInserted" : 1 })
+> db.first.find()
+{ "_id" : ObjectId("5b497e297e774150d5a37486"), "name" : "javascript" }
+{ "_id" : ObjectId("5b497e797e774150d5a37487"), "name" : "python", "year" : 2001 }
+{ "_id" : ObjectId("5b497e967e774150d5a37488"), "name" : "node", "year" : 2001, "framework" : "express" }
+{ "_id" : ObjectId("5b497ebe7e774150d5a37489"), "name" : "node", "year" : 2001, "framework" : "hapi" }
+{ "_id" : ObjectId("5b497f677e774150d5a3748a"), "name" : "node", "year" : 2005, "framework" : "stringloop" }
+{ "_id" : ObjectId("5b49800c7e774150d5a3748b"), "name" : "python", "framework" : { "danjgo" : 1998, "flask" : 2002 } }
+> db.first.find().pretty()
+{ "_id" : ObjectId("5b497e297e774150d5a37486"), "name" : "javascript" }
+{
+	"_id" : ObjectId("5b497e797e774150d5a37487"),
+	"name" : "python",
+	"year" : 2001
+}
+{
+	"_id" : ObjectId("5b497e967e774150d5a37488"),
+	"name" : "node",
+	"year" : 2001,
+	"framework" : "express"
+}
+{
+	"_id" : ObjectId("5b497ebe7e774150d5a37489"),
+	"name" : "node",
+	"year" : 2001,
+	"framework" : "hapi"
+}
+{
+	"_id" : ObjectId("5b497f677e774150d5a3748a"),
+	"name" : "node",
+	"year" : 2005,
+	"framework" : "stringloop"
+}
+{
+	"_id" : ObjectId("5b49800c7e774150d5a3748b"),
+	"name" : "python",
+	"framework" : {
+		"danjgo" : 1998,
+		"flask" : 2002
+	}
+}
+> db.first.insert({name:"python",framework:[{danjgo:1998,flask:2002},{web2py:2005,bottle:2007}]})
+WriteResult({ "nInserted" : 1 })
+> db.first.find().pretty()
+{ "_id" : ObjectId("5b497e297e774150d5a37486"), "name" : "javascript" }
+{
+	"_id" : ObjectId("5b497e797e774150d5a37487"),
+	"name" : "python",
+	"year" : 2001
+}
+{
+	"_id" : ObjectId("5b497e967e774150d5a37488"),
+	"name" : "node",
+	"year" : 2001,
+	"framework" : "express"
+}
+{
+	"_id" : ObjectId("5b497ebe7e774150d5a37489"),
+	"name" : "node",
+	"year" : 2001,
+	"framework" : "hapi"
+}
+{
+	"_id" : ObjectId("5b497f677e774150d5a3748a"),
+	"name" : "node",
+	"year" : 2005,
+	"framework" : "stringloop"
+}
+{
+	"_id" : ObjectId("5b49800c7e774150d5a3748b"),
+	"name" : "python",
+	"framework" : {
+		"danjgo" : 1998,
+		"flask" : 2002
+	}
+}
+{
+	"_id" : ObjectId("5b49805e7e774150d5a3748c"),
+	"name" : "python",
+	"framework" : [
+		{
+			"danjgo" : 1998,
+			"flask" : 2002
+		},
+		{
+			"web2py" : 2005,
+			"bottle" : 2007
+		}
+	]
+}
+> clear
+2018-07-14T10:19:05.725+0530 E QUERY    [thread1] ReferenceError: clear is not defined :
+@(shell):1:1
+> cls
+
+> db.first.find({year:{$gt:2001}})
+{ "_id" : ObjectId("5b497f677e774150d5a3748a"), "name" : "node", "year" : 2005, "framework" : "stringloop" }
+> db.first.find({year:{$lt:2001}})
+> db.first.find({year:{$lt:2005}})
+{ "_id" : ObjectId("5b497e797e774150d5a37487"), "name" : "python", "year" : 2001 }
+{ "_id" : ObjectId("5b497e967e774150d5a37488"), "name" : "node", "year" : 2001, "framework" : "express" }
+{ "_id" : ObjectId("5b497ebe7e774150d5a37489"), "name" : "node", "year" : 2001, "framework" : "hapi" }
+> db.first.find({year:{$gt:2001,$lt:2005}})
+> db.first.find({year:{$gt:2000,$lt:2005}})
+{ "_id" : ObjectId("5b497e797e774150d5a37487"), "name" : "python", "year" : 2001 }
+{ "_id" : ObjectId("5b497e967e774150d5a37488"), "name" : "node", "year" : 2001, "framework" : "express" }
+{ "_id" : ObjectId("5b497ebe7e774150d5a37489"), "name" : "node", "year" : 2001, "framework" : "hapi" }
+> db.first.find({year:{$gt:2000,$lt:2006}})
+{ "_id" : ObjectId("5b497e797e774150d5a37487"), "name" : "python", "year" : 2001 }
+{ "_id" : ObjectId("5b497e967e774150d5a37488"), "name" : "node", "year" : 2001, "framework" : "express" }
+{ "_id" : ObjectId("5b497ebe7e774150d5a37489"), "name" : "node", "year" : 2001, "framework" : "hapi" }
+{ "_id" : ObjectId("5b497f677e774150d5a3748a"), "name" : "node", "year" : 2005, "framework" : "stringloop" }
+> db.first.find().pretty()
+{ "_id" : ObjectId("5b497e297e774150d5a37486"), "name" : "javascript" }
+{
+	"_id" : ObjectId("5b497e797e774150d5a37487"),
+	"name" : "python",
+	"year" : 2001
+}
+{
+	"_id" : ObjectId("5b497e967e774150d5a37488"),
+	"name" : "node",
+	"year" : 2001,
+	"framework" : "express"
+}
+{
+	"_id" : ObjectId("5b497ebe7e774150d5a37489"),
+	"name" : "node",
+	"year" : 2001,
+	"framework" : "hapi"
+}
+{
+	"_id" : ObjectId("5b497f677e774150d5a3748a"),
+	"name" : "node",
+	"year" : 2005,
+	"framework" : "stringloop"
+}
+{
+	"_id" : ObjectId("5b49800c7e774150d5a3748b"),
+	"name" : "python",
+	"framework" : {
+		"danjgo" : 1998,
+		"flask" : 2002
+	}
+}
+{
+	"_id" : ObjectId("5b49805e7e774150d5a3748c"),
+	"name" : "python",
+	"framework" : [
+		{
+			"danjgo" : 1998,
+			"flask" : 2002
+		},
+		{
+			"web2py" : 2005,
+			"bottle" : 2007
+		}
+	]
+}
+> db.first.find({framework:{danjgo:1998}})
+> db.first.find({framework:{danjgo:1998,flask:2002}})
+{ "_id" : ObjectId("5b49800c7e774150d5a3748b"), "name" : "python", "framework" : { "danjgo" : 1998, "flask" : 2002 } }
+{ "_id" : ObjectId("5b49805e7e774150d5a3748c"), "name" : "python", "framework" : [ { "danjgo" : 1998, "flask" : 2002 }, { "web2py" : 2005, "bottle" : 2007 } ] }
+> db.first.insert({name:"python",framework:[{danjgo:1998,flask:2003},{web2py:2005,bottle:2007}]})
+WriteResult({ "nInserted" : 1 })
+> db.first.find().pretty()
+{ "_id" : ObjectId("5b497e297e774150d5a37486"), "name" : "javascript" }
+{
+	"_id" : ObjectId("5b497e797e774150d5a37487"),
+	"name" : "python",
+	"year" : 2001
+}
+{
+	"_id" : ObjectId("5b497e967e774150d5a37488"),
+	"name" : "node",
+	"year" : 2001,
+	"framework" : "express"
+}
+{
+	"_id" : ObjectId("5b497ebe7e774150d5a37489"),
+	"name" : "node",
+	"year" : 2001,
+	"framework" : "hapi"
+}
+{
+	"_id" : ObjectId("5b497f677e774150d5a3748a"),
+	"name" : "node",
+	"year" : 2005,
+	"framework" : "stringloop"
+}
+{
+	"_id" : ObjectId("5b49800c7e774150d5a3748b"),
+	"name" : "python",
+	"framework" : {
+		"danjgo" : 1998,
+		"flask" : 2002
+	}
+}
+{
+	"_id" : ObjectId("5b49805e7e774150d5a3748c"),
+	"name" : "python",
+	"framework" : [
+		{
+			"danjgo" : 1998,
+			"flask" : 2002
+		},
+		{
+			"web2py" : 2005,
+			"bottle" : 2007
+		}
+	]
+}
+{
+	"_id" : ObjectId("5b4981bb7e774150d5a3748d"),
+	"name" : "python",
+	"framework" : [
+		{
+			"danjgo" : 1998,
+			"flask" : 2003
+		},
+		{
+			"web2py" : 2005,
+			"bottle" : 2007
+		}
+	]
+}
+> db.first.find({framework:{danjgo:1998,flask:2002}})
+{ "_id" : ObjectId("5b49800c7e774150d5a3748b"), "name" : "python", "framework" : { "danjgo" : 1998, "flask" : 2002 } }
+{ "_id" : ObjectId("5b49805e7e774150d5a3748c"), "name" : "python", "framework" : [ { "danjgo" : 1998, "flask" : 2002 }, { "web2py" : 2005, "bottle" : 2007 } ] }
+> db.first.find({name:1})
+> db.first.find({},{name:1})
+{ "_id" : ObjectId("5b497e297e774150d5a37486"), "name" : "javascript" }
+{ "_id" : ObjectId("5b497e797e774150d5a37487"), "name" : "python" }
+{ "_id" : ObjectId("5b497e967e774150d5a37488"), "name" : "node" }
+{ "_id" : ObjectId("5b497ebe7e774150d5a37489"), "name" : "node" }
+{ "_id" : ObjectId("5b497f677e774150d5a3748a"), "name" : "node" }
+{ "_id" : ObjectId("5b49800c7e774150d5a3748b"), "name" : "python" }
+{ "_id" : ObjectId("5b49805e7e774150d5a3748c"), "name" : "python" }
+{ "_id" : ObjectId("5b4981bb7e774150d5a3748d"), "name" : "python" }
+> db.first.find({},{name:1}).sort()
+Error: error: {
+	"ok" : 0,
+	"errmsg" : "Failed to parse: sort: undefined. 'sort' field must be of BSON type object.",
+	"code" : 9,
+	"codeName" : "FailedToParse"
+}
+> db.first.find({}).sort({year:1})
+{ "_id" : ObjectId("5b497e297e774150d5a37486"), "name" : "javascript" }
+{ "_id" : ObjectId("5b49800c7e774150d5a3748b"), "name" : "python", "framework" : { "danjgo" : 1998, "flask" : 2002 } }
+{ "_id" : ObjectId("5b49805e7e774150d5a3748c"), "name" : "python", "framework" : [ { "danjgo" : 1998, "flask" : 2002 }, { "web2py" : 2005, "bottle" : 2007 } ] }
+{ "_id" : ObjectId("5b4981bb7e774150d5a3748d"), "name" : "python", "framework" : [ { "danjgo" : 1998, "flask" : 2003 }, { "web2py" : 2005, "bottle" : 2007 } ] }
+{ "_id" : ObjectId("5b497e797e774150d5a37487"), "name" : "python", "year" : 2001 }
+{ "_id" : ObjectId("5b497e967e774150d5a37488"), "name" : "node", "year" : 2001, "framework" : "express" }
+{ "_id" : ObjectId("5b497ebe7e774150d5a37489"), "name" : "node", "year" : 2001, "framework" : "hapi" }
+{ "_id" : ObjectId("5b497f677e774150d5a3748a"), "name" : "node", "year" : 2005, "framework" : "stringloop" }
+> db.first.find({}).sort({year:-1})
+{ "_id" : ObjectId("5b497f677e774150d5a3748a"), "name" : "node", "year" : 2005, "framework" : "stringloop" }
+{ "_id" : ObjectId("5b497e797e774150d5a37487"), "name" : "python", "year" : 2001 }
+{ "_id" : ObjectId("5b497e967e774150d5a37488"), "name" : "node", "year" : 2001, "framework" : "express" }
+{ "_id" : ObjectId("5b497ebe7e774150d5a37489"), "name" : "node", "year" : 2001, "framework" : "hapi" }
+{ "_id" : ObjectId("5b497e297e774150d5a37486"), "name" : "javascript" }
+{ "_id" : ObjectId("5b49800c7e774150d5a3748b"), "name" : "python", "framework" : { "danjgo" : 1998, "flask" : 2002 } }
+{ "_id" : ObjectId("5b49805e7e774150d5a3748c"), "name" : "python", "framework" : [ { "danjgo" : 1998, "flask" : 2002 }, { "web2py" : 2005, "bottle" : 2007 } ] }
+{ "_id" : ObjectId("5b4981bb7e774150d5a3748d"), "name" : "python", "framework" : [ { "danjgo" : 1998, "flask" : 2003 }, { "web2py" : 2005, "bottle" : 2007 } ] }
+> db.first.find({}).sort({year:-1}).limit(2)
+{ "_id" : ObjectId("5b497f677e774150d5a3748a"), "name" : "node", "year" : 2005, "framework" : "stringloop" }
+{ "_id" : ObjectId("5b497e797e774150d5a37487"), "name" : "python", "year" : 2001 }
+> db.first.find({}).sort({year:-1}).skip(1)
+{ "_id" : ObjectId("5b497e797e774150d5a37487"), "name" : "python", "year" : 2001 }
+{ "_id" : ObjectId("5b497e967e774150d5a37488"), "name" : "node", "year" : 2001, "framework" : "express" }
+{ "_id" : ObjectId("5b497ebe7e774150d5a37489"), "name" : "node", "year" : 2001, "framework" : "hapi" }
+{ "_id" : ObjectId("5b497e297e774150d5a37486"), "name" : "javascript" }
+{ "_id" : ObjectId("5b49800c7e774150d5a3748b"), "name" : "python", "framework" : { "danjgo" : 1998, "flask" : 2002 } }
+{ "_id" : ObjectId("5b49805e7e774150d5a3748c"), "name" : "python", "framework" : [ { "danjgo" : 1998, "flask" : 2002 }, { "web2py" : 2005, "bottle" : 2007 } ] }
+{ "_id" : ObjectId("5b4981bb7e774150d5a3748d"), "name" : "python", "framework" : [ { "danjgo" : 1998, "flask" : 2003 }, { "web2py" : 2005, "bottle" : 2007 } ] }
+> db.first.findOne()
+{ "_id" : ObjectId("5b497e297e774150d5a37486"), "name" : "javascript" }
+> db.first.findOne({year:2001})
+{
+	"_id" : ObjectId("5b497e797e774150d5a37487"),
+	"name" : "python",
+	"year" : 2001
+}
+> db.first.findOne({year:2001},{name:1})
+{ "_id" : ObjectId("5b497e797e774150d5a37487"), "name" : "python" }
+> db.first.findOne({year:2001},{_id:0})
+{ "name" : "python", "year" : 2001 }
+> db.first.findOne({$or:[]})
+2018-07-14T10:31:38.532+0530 E QUERY    [thread1] Error: error: {
+	"ok" : 0,
+	"errmsg" : "$and/$or/$nor must be a nonempty array",
+	"code" : 2,
+	"codeName" : "BadValue"
+} :
+_getErrorWithCode@src/mongo/shell/utils.js:25:13
+DBCommandCursor@src/mongo/shell/query.js:717:1
+DBQuery.prototype._exec@src/mongo/shell/query.js:117:28
+DBQuery.prototype.hasNext@src/mongo/shell/query.js:288:5
+DBCollection.prototype.findOne@src/mongo/shell/collection.js:258:10
+@(shell):1:1
+> db.first.findOne({$or:[{name:javascript},{year:1999}]})
+2018-07-14T10:32:12.483+0530 E QUERY    [thread1] ReferenceError: javascript is not defined :
+@(shell):1:25
+> db.first.findOne({$or:[{name:"javascript"},{year:1999}]})
+{ "_id" : ObjectId("5b497e297e774150d5a37486"), "name" : "javascript" }
+> db.first.findOne({$or:[{name:"golang"},{year:1999}]})
+null
+> db.first.findOne({$or:[{name:"golang"},{year:2001}]})
+{
+	"_id" : ObjectId("5b497e797e774150d5a37487"),
+	"name" : "python",
+	"year" : 2001
+}
+> 
