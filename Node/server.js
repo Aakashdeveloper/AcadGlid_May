@@ -12,6 +12,7 @@ var nav = [
 ];
 
 var productsRouter = require('./src/routes/ProductsRoutes')(nav);
+var adminRouter = require('./src/routes/adminRoutes')(nav);
 
 app.use(express.static(__dirname + '/public'));
 app.set('views', './src/views')
@@ -20,6 +21,7 @@ app.set('view engine', 'ejs')
 
 
 app.use('/products',productsRouter);
+app.use('/admin', adminRouter);
 
 app.get('/', function(req,res){
     res.render('index',
