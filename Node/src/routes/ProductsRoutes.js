@@ -3,7 +3,13 @@ const {MongoClient, ObjectID} = require('mongodb');
 const productRouter = express.Router();
 
 function router(nav){
-
+    productRouter.use((req, res, next) => {
+        if(req.user){
+            next();
+        } else {
+            res.redirect('/');
+        }
+    })
     productRouter.route('/')
     .get((req,res) => {
         const url = 'mongodb://localhost:27017';
